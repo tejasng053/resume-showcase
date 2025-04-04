@@ -1,0 +1,105 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 50% 98%;
+    --foreground: 210 20% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 20%;
+
+    --primary: 210 80% 20%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 30% 92%;
+    --secondary-foreground: 210 20% 20%;
+
+    --muted: 210 30% 92%;
+    --muted-foreground: 210 20% 50%;
+
+    --accent: 210 30% 92%;
+    --accent-foreground: 210 20% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 85%;
+    --input: 214.3 31.8% 85%;
+    --ring: 210 80% 30%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 210 50% 10%;
+    --foreground: 210 20% 98%;
+
+    --card: 210 50% 15%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 210 50% 15%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 210 80% 70%;
+    --primary-foreground: 210 20% 10%;
+
+    --secondary: 210 30% 25%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 210 30% 20%;
+    --muted-foreground: 210 20% 60%;
+
+    --accent: 210 30% 25%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 214.3 31.8% 25%;
+    --input: 214.3 31.8% 25%;
+    --ring: 210 80% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+.section-header {
+  @apply relative flex items-center justify-center mb-12;
+}
+
+.section-header::before,
+.section-header::after {
+  content: "";
+  @apply h-[1px] bg-border flex-grow;
+}
+
+.section-header::before {
+  @apply mr-4;
+}
+
+.section-header::after {
+  @apply ml-4;
+}
+
+.skill-dot {
+  @apply w-1 h-1 bg-primary rounded-full mx-2;
+}
+
+.timeline-dot {
+  @apply w-4 h-4 rounded-full bg-secondary border-2 border-primary absolute -left-2 top-1/2 transform -translate-y-1/2;
+}
