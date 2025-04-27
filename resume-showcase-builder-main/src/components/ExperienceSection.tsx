@@ -56,7 +56,7 @@ const ExperienceSection = () => {
             />
             
             <Project 
-              title="Web Server Sales Website"
+              title="Movie-search"
               points={[
                 "Built a responsive movie search and favorites web application using React.js. Integrated The Movie Database (TMDB) API to fetch and display popular movies. Implemented search functionality to find movies in real-time.",
 "Managed global state efficiently using Context API with local storage support to persist user favorites across sessions. Used React Router for navigation between Home and Favorites pages."
