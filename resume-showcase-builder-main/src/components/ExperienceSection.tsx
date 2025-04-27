@@ -58,8 +58,8 @@ const ExperienceSection = () => {
             <Project 
               title="Web Server Sales Website"
               points={[
-                "Created a fully functional website to sell web server services, demonstrating skills in front-end development and basic back-end integration using Python.",
-                "Ensured the website met user needs through extensive testing and user feedback for improved functionality."
+                "Built a responsive movie search and favorites web application using React.js. Integrated The Movie Database (TMDB) API to fetch and display popular movies. Implemented search functionality to find movies in real-time.",
+"Managed global state efficiently using Context API with local storage support to persist user favorites across sessions. Used React Router for navigation between Home and Favorites pages."
               ]}
             />
           </CardContent>
